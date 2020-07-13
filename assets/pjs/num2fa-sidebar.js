@@ -1,8 +1,7 @@
 function en2faSidebar() {
     var map =
     [
-    "۰","۱","۲","۳","۴",
-    "۵","۶","۷","۸","۹"
+      "۰","۱","۲","۳","۴","۵","۶","۷","۸","۹"
     ];
     var list = document.querySelectorAll("aside");
     for (var i = 0; i < list.length; i++) {

@@ -1,9 +1,9 @@
-function en2faNumPostMeta() {
+function en2faNumPost() {
     var map =
     [
       "۰","۱","۲","۳","۴","۵","۶","۷","۸","۹"
     ];
-    var list = document.querySelectorAll(".entry-meta");
+    var list = document.querySelectorAll(".post-content-area.status-publish.hentry .entry-content :not(pre):not(code)");
     for (var i = 0; i < list.length; i++) {
       list[i].innerHTML = list[i].innerHTML.replace(
     /\d(?=[^<>]*(<|$))/g,
@@ -12,4 +12,4 @@ function en2faNumPostMeta() {
       }
     
     }
-    en2faNumPostMeta();
+    en2faNumPost();

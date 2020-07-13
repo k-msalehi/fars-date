@@ -1,9 +1,10 @@
 <?php
+
 /**
  * Classic Editor
  *
  * Plugin Name: Fars Date
- * Plugin URI:  https://wordpress.org/plugins/fars-date/
+ * Plugin URI:  http://Karket.ir/fars-date
  * Description: Adds Suppport for Jalali (Shamsi) date and Persian numbers to posts, comments, pages, archives, search, categories, permalinks; to have better experience with Persian sites 
  * Version:     1.0
  * Author:      Mohammad Salehi Koleti
@@ -20,6 +21,49 @@
  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY.
  */
 if (!defined('ABSPATH')) exit('No direct access allowed');
+$farsDateSetting;
 
+class FarsDate
+{
+    public function __construct()
+    {
+        global $farsDateSetting;
+        global $wpdb;
+        $tableName = $wpdb->prefix . 'fars_date';
+        $settingHolder = $wpdb->get_results("SELECT `name`,`value` FROM $tableName", ARRAY_A);
+    
+        foreach ($settingHolder as $value) {
+            $farsDateSetting[$value['name']] = $value['value'];
+        }
+        $this->define_const();
+        $this->active();
+        require_once('admin/setting.php');
+        require_once('includes/loader.php');
 
- ?>
+    }
+    private function active()
+    {
+        require_once('includes/create-table.php');
+        register_activation_hook((__FILE__),'farsDateCreateTable');
+    }
+    private function define_const()
+    {
+        if (!defined('FARS_DATE_ROOT')) {
+            define('FARS_DATE_ROOT', __FILE__);
+        }
+
+        if (!defined('FARS_DATE_DIR')) {
+            define('FARS_DATE_DIR', plugin_dir_path(FARS_DATE_ROOT));
+        }
+
+        if (!defined('FARS_DATE_URL')) {
+            define('FARS_DATE_URL', plugin_dir_url(FARS_DATE_ROOT));
+        }
+
+        if (!defined('FARS_DATE_SETTING')) {
+            define('FARS_DATE_SETTING', '1.0');
+        }
+    }
+}
+
+return new FarsDate;

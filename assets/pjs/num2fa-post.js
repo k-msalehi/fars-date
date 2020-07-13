@@ -1,10 +1,9 @@
 function en2faNumPost() {
     var map =
     [
-    "۰","۱","۲","۳","۴",
-    "۵","۶","۷","۸","۹"
+      "۰","۱","۲","۳","۴","۵","۶","۷","۸","۹"
     ];
-    var list = document.querySelectorAll(".post-content-area.post.type-post.status-publish.hentry .entry-content");
+    var list = document.querySelectorAll(".post-content-area.status-publish.hentry .entry-content");
     for (var i = 0; i < list.length; i++) {
       list[i].innerHTML = list[i].innerHTML.replace(
     /\d(?=[^<>]*(<|$))/g,
