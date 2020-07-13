@@ -22,7 +22,13 @@
  */
 if (!defined('ABSPATH')) exit('No direct access allowed');
 $farsDateSetting;
-
+/**
+ * Registers a setting.
+ */
+function wpdocs_register_my_setting() {
+    register_setting( 'my_options_group', 'my_option_name', 'intval' ); 
+} 
+add_action( 'admin_init', 'wpdocs_register_my_setting' );
 class FarsDate
 {
     public function __construct()
