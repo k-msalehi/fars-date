@@ -31,6 +31,10 @@ global $farsDateSetting;
                     <td>
                         <fieldset>
                             <label>
+                                <input name="num2fa-all" type="checkbox" value="1" <?=get_option('num2fa-all') == '1' ? 'checked' : '' ?>>
+                                <?php _e('Convert All numbers in every where to persian', 'fars-date') ?>
+                            </label><br>
+                            <label>
                                 <input name="num2fa-navbar" type="checkbox" value="1" <?=get_option('num2fa-navbar') == '1' ? 'checked' : '' ?>>
                                 <?php _e('Top Nav bar', 'fars-date') ?>
                             </label><br>
