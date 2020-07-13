@@ -1,8 +1,6 @@
 <?php
 if (!defined('ABSPATH')) exit('No direct access allowed');
 global $farsDateSetting;
-
-var_dump(get_option('num2fa-post'));
 ?>
 <div class="wrap">
     <h3>
@@ -12,8 +10,8 @@ var_dump(get_option('num2fa-post'));
     
     </h3>
     <form method="post" action="options.php">
-        <?php settings_fields('fars-date-setting');
-        ?>
+        <?php settings_fields('fars-date-setting');?>
+        <?php do_settings_sections('fars-date-setting');?>
         <table class="form-table">
             <tbody>
                 <tr>
@@ -42,7 +40,7 @@ var_dump(get_option('num2fa-post'));
                             </label><br>
                             <label>
                                 <input name="num2fa-post" type="checkbox" value="1" <?= get_option('num2fa-post') == '1' ? 'checked' : '' ?>>
-                                <?php _e('Post/Pages content', 'fars-date') ?>
+                                <?php _e('Post/Pages content', '`fars-date') ?>
                             </label><br>
                             <label>
                                 <input name="num2fa-post-title" type="checkbox" value="1" <?=get_option('num2fa-post-title') == '1' ? 'checked' : '' ?>>
@@ -53,7 +51,7 @@ var_dump(get_option('num2fa-post'));
                                 <?php _e('Post/Page Meta', 'fars-date') ?> <small><?php _e('(descaription, date, auther)', 'fars-date') ?></small>
                             </label> <br>
                             <label>
-                                <input name="convert-code" type="checkbox" value="1" <?=get_option('convert-code') == 1 ? 'checked' : '' ?>>
+                                <input name="code-convert" type="checkbox" value="1" <?=get_option('code-convert') == 1 ? 'checked' : '' ?>>
                                 <?php _e(htmlentities('<code> and <pre>?'), 'fars-date') ?> <small><?php _e('(converts numbers in code and pre tag)', 'fars-date)') ?></small>
                             </label>
                         </fieldset>
