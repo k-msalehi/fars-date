@@ -36,7 +36,9 @@ function register_fars_date_setting() {
     register_setting('fars-date-setting', 'num2fa-navbar',['default'=>'1'] ); 
     register_setting('fars-date-setting', 'num2fa-sidebar',['default'=>'1'] ); 
     register_setting('fars-date-setting', 'num2fa-all',['default'=>'1'] ); 
-    register_setting('fars-date-setting', 'code-convert',['default'=>'1'] ); 
+    register_setting('fars-date-setting', 'num2fa-code-convert',['default'=>'0'] ); 
+    register_setting('fars-date-setting', 'num2fa-comment',['default'=>'1'] ); 
+
 } 
 add_action( 'admin_init', 'register_fars_date_setting' );
 

@@ -15,7 +15,7 @@ value VARCHAR(32) NOT NULL,
         dbDelta($sql);
 
 
-        $wpdb->query("INSERT INTO `$tableName` (`id`, `name`, `value`) VALUES (NULL, 'num2fa-post', '1'), (NULL, 'num2fa-post-title', '1'), (NULL, 'num2fa-post-meta', '0'), (NULL, 'num2fa-navbar', '1'), (NULL, 'num2fa-sidebar', '1'), (NULL, 'num2fa-enable', '0'), (NULL, 'num2fa-all', '0'), (NULL, 'code-convert', '0')");
+        $wpdb->query("INSERT INTO `$tableName` (`id`, `name`, `value`) VALUES (NULL, 'num2fa-post', '1'), (NULL, 'num2fa-post-title', '1'), (NULL, 'num2fa-post-meta', '0'), (NULL, 'num2fa-navbar', '1'), (NULL, 'num2fa-sidebar', '1'), (NULL, 'num2fa-enable', '0'), (NULL, 'num2fa-all', '0'), (NULL, 'code-convert', '0')(NULL, 'num2fa-comment', '0')");
     }
 }
 //INSERT INTO `wp_fars_date` (`id`, `name`, `value`) VALUES (NULL, 'num2fa-post', ''), (NULL, 'num2fa-post-title', ''), (NULL, 'num2fa-post-meta', ''), (NULL, 'num2fa-navbar', ''), (NULL, 'num2fa-sidebar', '')
