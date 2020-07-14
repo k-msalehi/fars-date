@@ -1,0 +1,117 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Fars Date\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-14 21:33+0000\n"
+"PO-Revision-Date: 2020-07-14 21:37+0000\n"
+"Last-Translator: \n"
+"Language-Team: فارسی\n"
+"Language: fa_IR\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.0; wp-5.4.2"
+
+#: admin/form-setting.php:8 admin/setting.php:8 admin/setting.php:9
+msgid "Fars Date Setting"
+msgstr "تنظیمات فارس دیت"
+
+#: admin/form-setting.php:18
+msgid "Method of converting numbers to Persian"
+msgstr "روش تبدیل اعداد"
+
+#: admin/form-setting.php:22
+msgid "Don't convert numbers"
+msgstr "تبدیل اعداد غیر فعال باشد"
+
+#: admin/form-setting.php:24
+msgid "javascript"
+msgstr "جاوااسکریپت"
+
+#: admin/form-setting.php:24
+msgid "(in some themes this type may convert numbers with a little delay)"
+msgstr "(بسته به حجم قالب سایت تبدیل ممکن است با تاخیر انجام شود)"
+
+#: admin/form-setting.php:26
+msgid "PHP"
+msgstr ""
+
+#: admin/form-setting.php:26
+msgid "(Only availble in Pro version)"
+msgstr "(ارتقاع به نسخه حرفه ای)"
+
+#: admin/form-setting.php:30
+msgid "Places of numbers to Convert to Persian"
+msgstr "تبدیل اعداد در چه قسمت هایی انجام شود؟"
+
+#: admin/form-setting.php:35
+msgid "Convert All numbers in every where to persian"
+msgstr "تبدیل همه اعداد سایت به فارسی"
+
+#: admin/form-setting.php:35
+msgid "Makes below options ineffective"
+msgstr "(تنظیمات زیر را بی اثر میکند)"
+
+#: admin/form-setting.php:39
+msgid "Top Nav bar"
+msgstr "نوار بالا"
+
+#: admin/form-setting.php:43
+msgid "Sidebar"
+msgstr "سایدبار"
+
+#: admin/form-setting.php:47
+msgid "Post/Pages content"
+msgstr "محتوای نوشته ها"
+
+#: admin/form-setting.php:51
+msgid "Post/Page Title"
+msgstr "عناوین نوشته ها"
+
+#: admin/form-setting.php:55
+msgid "Post/Page Meta"
+msgstr "متا نوشته ها"
+
+#: admin/form-setting.php:55
+msgid "(descaription, date, auther)"
+msgstr "(توضیحات، تاریخ، نویسنده)"
+
+#: admin/form-setting.php:59
+msgid "Comments"
+msgstr "نظرات"
+
+#: admin/form-setting.php:63
+msgid "<code> and <pre>"
+msgstr "<code> و <pre>"
+
+#: admin/form-setting.php:63
+msgid "(converts numbers in code and pre tag)"
+msgstr "(تبدیل اعداد در تگ code و pre)"
+
+#. Name of the plugin
+msgid "Fars Date"
+msgstr "فارس دیت"
+
+#. Description of the plugin
+msgid ""
+"Adds Suppport for Jalali (Shamsi) date and Persian numbers to posts, "
+"comments, pages, archives, search, categories, permalinks; to have better "
+"experience with Persian sites"
+msgstr ""
+"افزودن پشتیبانی از تاریخ شمسی (جلالی) و اعداد فارسی در برگه ها، پست ها، "
+"بازخورد ها، بایگانی، جستجو، دسته بندی ها و لینک ها؛ جهت بهبود تجربه کاربری "
+"در سایت های فارسی زبان"
+
+#. URI of the plugin
+msgid "http://Karket.ir/fars-date"
+msgstr ""
+
+#. Author of the plugin
+msgid "Mohammad Salehi Koleti"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://Karket.ir"
+msgstr ""

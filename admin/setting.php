@@ -5,8 +5,8 @@ function showAdminSidebar()
 
     add_submenu_page(
         'options-general.php',
-        __('Fars Date Settings', 'fars-date'),
-        __('Fars Date Settings', 'fars-date'),
+        __('Fars Date Setting', 'fars-date'),
+        __('Fars Date Setting', 'fars-date'),
         'manage_options',
         'fars-date-setting',
         'showSetting'

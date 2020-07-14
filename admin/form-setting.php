@@ -15,7 +15,7 @@ global $farsDateSetting;
         <table class="form-table">
             <tbody>
                 <tr>
-                    <th scope="row"><?php _e('Method of converting numbers to Persian') ?></th>
+                    <th scope="row"><?php _e('Method of converting numbers to Persian','fars-date') ?></th>
                     <td>
                         <fieldset>
                             <label><input type="radio" name="num2fa-enable" value="0" <?=get_option('num2fa-enable') == '0' ? 'checked' : '' ?>>
@@ -32,7 +32,7 @@ global $farsDateSetting;
                         <fieldset>
                             <label>
                                 <input name="num2fa-all" type="checkbox" value="1" <?=get_option('num2fa-all') == '1' ? 'checked' : '' ?>>
-                                <?php _e('Convert All numbers in every where to persian', 'fars-date') ?> <small><?php _e('Makes blow options ineffective','fars-date') ?></small>
+                                <?php _e('Convert All numbers in every where to persian', 'fars-date') ?> <small><?php _e('Makes below options ineffective','fars-date') ?></small>
                             </label><br>
                             <label>
                                 <input name="num2fa-navbar" type="checkbox" value="1" <?=get_option('num2fa-navbar') == '1' ? 'checked' : '' ?>>
@@ -44,7 +44,7 @@ global $farsDateSetting;
                             </label><br>
                             <label>
                                 <input name="num2fa-post" type="checkbox" value="1" <?= get_option('num2fa-post') == '1' ? 'checked' : '' ?>>
-                                <?php _e('Post/Pages content', '`fars-date') ?>
+                                <?php _e('Post/Pages content', 'fars-date') ?>
                             </label><br>
                             <label>
                                 <input name="num2fa-post-title" type="checkbox" value="1" <?=get_option('num2fa-post-title') == '1' ? 'checked' : '' ?>>
@@ -60,7 +60,7 @@ global $farsDateSetting;
                             </label> <br>
                             <label>
                                 <input name="num2fa-code-convert" type="checkbox" value="1" <?=get_option('num2fa-code-convert') == 1 ? 'checked' : '' ?>>
-                                <?php _e(htmlentities('<code> and <pre>?'), 'fars-date') ?> <small><?php _e('(converts numbers in code and pre tag)', 'fars-date)') ?></small>
+                                <?= esc_html(__('<code> and <pre>','fars-date')) ?> <small><?php _e('(converts numbers in code and pre tag)', 'fars-date') ?></small>
                             </label>
                         </fieldset>
                     </td>

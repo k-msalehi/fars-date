@@ -12,6 +12,7 @@
  * License:     GPLv3 or later
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: fars-date
+ *  Domain Path: languages
  *
  * Fars Date is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -41,12 +42,17 @@ class FarsDate
         foreach ($settingHolder as $value) {
             $farsDateSetting[$value['name']] = $value['value'];
         }
+
         $this->define_const();
+        add_action( 'init', function(){
+            load_plugin_textdomain('fars-date', FALSE, dirname(plugin_basename(__FILE__)).'/languages/');
+        });
         $this->active();
         require_once('admin/setting.php');
         require_once('includes/loader.php');
 
     }
+
     private function active()
     {
         require_once('includes/create-table.php');
