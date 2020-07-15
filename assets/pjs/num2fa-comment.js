@@ -3,7 +3,7 @@ function en2faNumPostTitle() {
     [
       "۰","۱","۲","۳","۴","۵","۶","۷","۸","۹"
     ];
-    var list = document.querySelectorAll(".comment-title,.comment,.comment-box");
+    var list = document.querySelectorAll(".comment-title,.comment,.comment-box,#comment,#comments");
     for (var i = 0; i < list.length; i++) {
       list[i].innerHTML = list[i].innerHTML.replace(
     /\d(?=[^<>]*(<|$))/g,

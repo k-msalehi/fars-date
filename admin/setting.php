@@ -38,8 +38,13 @@ function register_fars_date_setting() {
     register_setting('fars-date-setting', 'num2fa-all',['default'=>'1'] ); 
     register_setting('fars-date-setting', 'num2fa-code-convert',['default'=>'0'] ); 
     register_setting('fars-date-setting', 'num2fa-comment',['default'=>'1'] ); 
+    register_setting('fars-date-setting', 'fd-date-enable',['default'=>'1'] ); 
+    register_setting('fars-date-setting', 'fd-date-post',['default'=>'1'] ); 
+    register_setting('fars-date-setting', 'fd-date-comment',['default'=>'1'] ); 
 
 } 
 add_action( 'admin_init', 'register_fars_date_setting' );
 
 add_action('admin_menu', 'showAdminSidebar');
+
+//var_dump(get_option('fd-date-enable'));exit();
